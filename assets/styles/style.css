@@ -1,1 +1,23 @@
-@import url(./settings.scss);/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: inter;
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: MerriweatherLight;
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "MerriweatherLight", sans-serif;
+  list-style: none;
+  color: rgb(92, 92, 92);
+  outline: none;
+}
+
+.btn {
+  border: 1px solid black;
+  background: none;
+}/*# sourceMappingURL=style.css.map */
