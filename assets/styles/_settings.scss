@@ -1,0 +1,56 @@
+@font-face {
+  font-family: inter;
+  src: url(../fonts/Inter-ExtraBold.ttf);}
+@font-face {
+  font-family: MerriweatherLight;
+  src: url(../fonts/Merriweather-Light.ttf);}
+
+$color-1: grey;
+$blanck: white;
+$black: black;
+
+* {
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MerriweatherLight", sans-serif;
+  list-style: none;
+  color: $black;
+  outline: none;
+  text-align: center;
+}
+
+body{
+  background: url(../images/bg.jpg) fixed center/cover;
+  padding: 0 24px;
+  display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: column;
+}
+.btn {
+  border: 1px solid $black;
+  background: none;
+  padding: 12px 32px;
+  text-transform: uppercase;
+  font-family: "inter", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+h1{
+  color: $blanck;
+  font-family: "inter", sans-serif;
+font-size: 3.2rem;
+text-transform: uppercase;
+line-height: 65px;
+width: 70%;
+letter-spacing: 4px;
+margin: 0 auto 36px;
+
+}
+h2{
+  font-family: "inter", sans-serif;
+font-size: 2.5rem;
+text-transform: uppercase;
+line-height: 45px;
+}
