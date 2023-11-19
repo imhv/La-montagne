@@ -36,8 +36,7 @@ transform: translateX(-50%);
 ul {
   display: flex;
   align-items: center;
-  justify-content: center; 
-
+  justify-content: center;
   li {
     padding: 24px 16px;
     color: $blanck;
@@ -46,16 +45,22 @@ ul {
     font-size: 0.7rem;
     letter-spacing: 1px;
     min-height: 65px;
+   
   }
   .bg-withe {
     background: rgb(247, 247, 247);
     color: $black;
-    
   }
   i {
     color: white;
     font-size: 1rem;
     padding: 0 12px;
+  }
+ 
+}
+.nav-right {
+  @media screen and (max-width: 600px) {
+    display: none;
   }
 }
 }

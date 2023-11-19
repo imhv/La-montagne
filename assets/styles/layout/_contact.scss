@@ -15,12 +15,20 @@ footer {
     position: absolute;
     top: 0;
     left: 50%;
-    
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    display: block;
   }
   .footer-left {
     width: 50%;
     padding: 48px;
     display: grid;
+    @media screen and (max-width: 1000px) {
+      width: 100%; 
+    }
   .input {
     display: flex;
     align-items: left;
@@ -49,16 +57,25 @@ footer {
     width: 50%;
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
+    @media screen and (max-width: 1000px) {
+      width: 100%; 
+    }
       div {
        display: grid;
         grid-template-columns: 30% 70%;
         padding: 50px 46px;
         align-items: center;
+        @media screen and (max-width: 600px) {
+          padding: 40px 16px;
+        }
          .txt {
           text-align: left;
           color: rgb(160, 160, 160);
           font-size: 0.9rem;
           line-height: 28px;
+          @media screen and (max-width: 500px) {
+            font-size: 0.7rem;
+          }
           }
         }
       .border {
@@ -103,6 +120,9 @@ label, .label {
   letter-spacing: 2px;
   text-align: left;
   color: rgb(131, 131, 131);
+  @media screen and (max-width: 500px) {
+    font-size: 0.6rem;
+  }
 
 }
   label {

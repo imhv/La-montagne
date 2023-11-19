@@ -27,9 +27,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: top;
+      -ms-flex-pack: top;
+          justify-content: top;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -193,6 +193,11 @@ nav ul i {
   font-size: 1rem;
   padding: 0 12px;
 }
+@media screen and (max-width: 600px) {
+  nav .nav-right {
+    display: none;
+  }
+}
 
 .section-1 {
   border-bottom: 1px solid rgb(219, 219, 219);
@@ -230,9 +235,9 @@ nav ul i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -252,6 +257,16 @@ nav ul i {
   position: absolute;
   top: 0;
   left: 50%;
+}
+@media screen and (max-width: 800px) {
+  .section-2::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section-2 {
+    display: block;
+  }
 }
 
 footer {
@@ -279,10 +294,25 @@ footer::before {
   top: 0;
   left: 50%;
 }
+@media screen and (max-width: 1000px) {
+  footer::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  footer {
+    display: block;
+  }
+}
 footer .footer-left {
   width: 50%;
   padding: 48px;
   display: grid;
+}
+@media screen and (max-width: 1000px) {
+  footer .footer-left {
+    width: 100%;
+  }
 }
 footer .footer-left .input {
   display: -webkit-box;
@@ -321,6 +351,11 @@ footer .footer-right {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
 }
+@media screen and (max-width: 1000px) {
+  footer .footer-right {
+    width: 100%;
+  }
+}
 footer .footer-right div {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -329,11 +364,21 @@ footer .footer-right div {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 600px) {
+  footer .footer-right div {
+    padding: 40px 16px;
+  }
+}
 footer .footer-right div .txt {
   text-align: left;
   color: rgb(160, 160, 160);
   font-size: 0.9rem;
   line-height: 28px;
+}
+@media screen and (max-width: 500px) {
+  footer .footer-right div .txt {
+    font-size: 0.7rem;
+  }
 }
 footer .footer-right .border {
   position: relative;
@@ -385,6 +430,11 @@ label, .label {
   letter-spacing: 2px;
   text-align: left;
   color: rgb(131, 131, 131);
+}
+@media screen and (max-width: 500px) {
+  label, .label {
+    font-size: 0.6rem;
+  }
 }
 
 label {
