@@ -57,13 +57,17 @@
       </nav>
     </header>
     <div class="section-1 container">
-      <p>April 25, 2017</p>
+      <div class="date">
+        <p>April 25, 2017</p>
+      </div>
       <h2>and this is a massive headline</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto id
-        quis autem reprehenderit in non fuga unde corporis molestias similique?
+      <p class="subtitle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam explicabo
+        eos totam quidem consequuntur voluptatum! Esse soluta error delectus
+        explicabo animi doloribus autem, similique pariatur voluptatum velit,
+        deleniti numquam repudiandae.
       </p>
-      <img src="./images/pic01.jpg" alt="Jump image" height="400px" />
+      <img src="./images/pic01.jpg" alt="Jump image" />
       <button class="btn">full story</button>
     </div>
     <div class="section-2">
@@ -71,7 +75,7 @@
         <p>april 24, 2017</p>
         <h3>sed magna ipsum faucibus</h3>
         <img src="./images/pic02.jpg" alt="landscape" />
-        <p>
+        <p class="subtitle">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
           harum, quisquam id accusantium dicta vel?
         </p>
@@ -81,7 +85,7 @@
         <p>april 21, 2017</p>
         <h3>Primis eget imperdiet lorem</h3>
         <img src="./images/pic03.jpg" alt="landscape2" />
-        <p>
+        <p class="subtitle">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
           harum, quisquam id accusantium dicta vel?
         </p>
@@ -90,34 +94,35 @@
     </div>
     <footer class="contact">
       <div class="footer-left">
-        <div class="name">
+        <div class="input">
           <label for="name">Name</label>
           <input type="text" id="name" />
         </div>
-        <div class="email">
+        <div class="input">
           <label for="email">email</label>
           <input type="text" id="email" />
         </div>
-        <div class="message">
+        <div class="input">
           <label for="message">messages</label>
           <textarea id="message"></textarea>
         </div>
         <input type="submit" class="btn" value="send message" />
       </div>
       <div class="footer-right">
-        <div class="adress">
-          <p>adresses</p>
-          <p>1234 somewhere Road #87257 Nashville, TN 00000-0000</p>
+        <div class="adress border">
+          <p class="label">adresses</p>
+          <p class="txt">1234 somewhere Road #87257 Nashville, TN 00000-0000</p>
         </div>
-        <div class="phone">
-          <p>phone</p>
-          <p>(OO0) 000 - 00000</p>
+        <div class="phone border">
+          <p class="label">phone</p>
+          <p class="txt">(OO0) 000 - 00000</p>
         </div>
-        <div class="email">
-          <p>email</p>
-          <p>info@untitled.ldt</p>
+        <div class="email border">
+          <p class="label">email</p>
+          <p class="txt">info@untitled.ldt</p>
         </div>
         <div class="social">
+          <p class="label">Social</p>
           <ul class="social-logo">
             <li>
               <a href="#"><i class="fab fa-twitter"></i></a>

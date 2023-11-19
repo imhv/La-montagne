@@ -1,0 +1,113 @@
+footer {
+  max-width: 1100px;
+  background: $blanck;
+  width: 100%;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 48px;
+  &::before{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: rgb(219, 219, 219);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+  }
+  .footer-left {
+    width: 50%;
+    padding: 48px;
+    display: grid;
+  .input {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+  #email, #name {
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 3px;
+    height: 44px;
+    margin-bottom: 12px;
+  }
+#message {
+  border: 1px solid rgb(219, 219, 219);
+    border-radius: 3px;
+    height: 160px;
+    resize: none;
+    margin-bottom: 24px;
+  }
+  .btn {
+    width: 190px;
+  }
+  }
+  .footer-right {
+    width: 50%;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+      div {
+       display: grid;
+        grid-template-columns: 30% 70%;
+        padding: 50px 46px;
+        align-items: center;
+         .txt {
+          text-align: left;
+          color: rgb(160, 160, 160);
+          font-size: 0.9rem;
+          line-height: 28px;
+          }
+        }
+      .border {
+        position: relative;
+          &::after {
+            content: "";
+            height: 1px;
+            width: 100%;
+            background: rgb(219, 219, 219);
+            position: absolute;
+            bottom: 0;
+              }
+              }
+ ul {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 12px;
+  
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      width: 50px;
+      border-radius: 500px;
+      border: 1px solid rgb(219, 219, 219);
+
+    a {
+      font-size: 1.1rem;
+    }
+    }
+}
+  }
+  
+}
+label, .label {
+  color: $color-1;
+  text-transform: uppercase;
+  font-family: "inter", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-align: left;
+  color: rgb(131, 131, 131);
+
+}
+  label {
+    margin-bottom: 12px;
+  }
+  .label {
+    margin-right: 32px;
+  }
